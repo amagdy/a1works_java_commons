@@ -6,7 +6,6 @@ import java.util.Arrays;
  * Created by Ahmed Magdy Ezzeldin <a.magdy@a1works.com> on 4/11/15.
  */
 public class EqualsBuilder<T> {
-    private Class<?> cls;
     private T target;
     private T otherObject;
     private boolean isEqual = false;
@@ -30,7 +29,6 @@ public class EqualsBuilder<T> {
                 otherObject = (T)other;
                 instance = new EqualsBuilder<T>();
                 instance.target = target;
-                instance.cls = cls;
                 instance.otherObject = otherObject;
                 instance.isEqual = true;
             }
